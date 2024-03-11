@@ -16,11 +16,11 @@ import ReactDOM from 'react-dom';
 
 const child2 = React.createElement('p',{},"I am Child2")
 const child1 = React.createElement('p',{},"I am Child1")
-// const div = React.createElement('div',{className:'text'},[child1,child2]);
+const div = React.createElement('div',{className:'text'},[child1,child2]);
 console.log(div)
 
 const div = <div className="text">Hello</div>
-console.log(div)
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(div)

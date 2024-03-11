@@ -20,7 +20,7 @@ const child1 = React.createElement('p',{},"I am Child1")
 console.log(div)
 
 const div = <div className="text">Hello</div>
-console.log(div)
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(div)
