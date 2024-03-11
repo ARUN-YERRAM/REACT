@@ -18,15 +18,15 @@ import ReactDOM from 'react-dom/client';
 // const child1 = React.createElement('p',{},"I am Child1")
 // const div = React.createElement('div',{className:'text'},[child1,child2]);
 
-const apiData = "hello 1xhxbjasckhas";
-const MorningText = true;
+const apiData = "hello 1";
+const MorningText = false;
 const afterText = "afternoon user";
 
-const handleClick = (state) => {
-    console.log("clicked",state);
+function handleClick() {
+    console.log("clicked")
 }
-const MorningElement = <div>{apiData} <span onClick={()=>handleClick(apiData)}>it is 8am</span></div>
-const afternoonElement = <div>{afterText} <span onClick={()=>handleClick(apiData)}>it is 8 pm</span></div>
+const MorningElement = <div>{apiData} <span onClick={handleClick}>it is 8am</span></div>
+const afternoonElement = <div>{afterText} <span onClick></span>it is 8 pm</div>
 
 const div = MorningText?MorningElement:afternoonElement
 
